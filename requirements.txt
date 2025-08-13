@@ -1,0 +1,38 @@
+fastapi
+uvicorn
+
+# Database
+sqlalchemy
+psycopg2-binary  # For PostgreSQL
+# or for MySQL:
+# mysql-connector-python==8.1.0
+# or for SQLite (included in Python)
+
+# Async database support (optional)
+asyncpg
+sqlalchemy[asyncio]
+
+# Migrations
+alembic
+
+# Environment variables
+python-dotenv
+
+# Security
+passlib
+python-jose
+bcrypt==4.0.1
+
+# Validation
+pydantic
+pydantic-settings
+email-validator
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+
+# Development
+python-multipart
+watchfiles
