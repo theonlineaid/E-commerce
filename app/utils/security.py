@@ -57,7 +57,7 @@ def verify_token(token: str) -> dict:
             settings.JWT_SECRET_KEY,
             algorithms=[settings.JWT_ALGORITHM]
         )
-        if datetime.now(timezone.utc) > datetime.fromtimestamp(payload["exp"]):
+        if datetime.now(timezone.utc) > datetime.fromtimestamp(payload["exp"], tz=timezone.utc):
             raise JWTError("Token expired")
         return payload
     except JWTError as e:

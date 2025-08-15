@@ -16,4 +16,7 @@ class User(Base):
     password = Column(String)
     username = Column(String, unique=True)
     is_active = Column(Boolean, default=True)
-    full_name = Column(String, nullable=True)
+    first_name = Column(String, nullable=True)
+    last_name = Column(String, nullable=True)
+    phone_number = Column(String, nullable=True)
+    avatar_url = Column(String, nullable=True)

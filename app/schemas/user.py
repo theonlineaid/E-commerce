@@ -5,7 +5,7 @@ class UserCreate(BaseModel):
     email: EmailStr
     password: str = Field(..., min_length=8, max_length=100)
     username: str = Field(..., min_length=3, max_length=50)
-    full_name: str | None = Field(None, max_length=100)
+    first_name: str | None = Field(None, max_length=100)
 
 class UserOut(BaseModel):
     """Schema for returning user data (output)"""

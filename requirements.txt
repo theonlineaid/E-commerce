@@ -36,3 +36,6 @@ httpx
 # Development
 python-multipart
 watchfiles
+
+# store
+cloudinary
